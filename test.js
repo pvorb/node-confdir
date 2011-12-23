@@ -3,7 +3,7 @@ var path = require('path');
 var confdir = require('./');
 
 confdir(__dirname, 'foo', function callback(err, dir) {
-  assert(path.resolve(__dirname, '.foo'), 'Paths do not match.');
+  assert(path.resolve(__dirname, '.foo') === dir, 'Paths do not match.');
   console.log('passed test.');
 });
 
