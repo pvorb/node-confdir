@@ -7,7 +7,21 @@ handle module specific configurations in their own directory
 
 ## Usage
 
-undefined
+For example anywhere in a Git repository you could get a reference to the `.git`
+directory:
+
+``` js
+var confdir = require('confdir');
+
+confdir(__dirname, 'git', function (err, dir) {
+  if (err)
+    console.log(err);
+  else
+    console.log("The Git files are in " + dir);
+});
+```
+
+This would print an absolute reference to the `.git` directory.
 
 ## Bugs and Issues
 
