@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/pvorb/node-confdir.png)](http://travis-ci.org/pvorb/node-confdir)
 # confdir
 handle module specific configurations in their own directory
 
